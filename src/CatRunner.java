@@ -17,5 +17,11 @@ public class CatRunner {
         cat4.setName(cat4.getName() + " Meow");
         System.out.println(cat4);
         System.out.println(cats);
+
+        for(int i = 0; i < cats.size(); i ++){
+            String newName = cats.get(i).getName().toUpperCase();
+            cats.get(i).setName(newName);
+        }
+        System.out.println(cats);
     }
 }
